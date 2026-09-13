@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Musli Hygiene Care — professional cleaning and hygiene product catalogue.">
+<title>Musli Hygiene Care | Professional Cleaning Solutions</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#090b0d;color:#f5f5f2}
+header{padding:20px 6%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #292d30;position:sticky;top:0;background:rgba(9,11,13,.94);backdrop-filter:blur(12px);z-index:10}
+.logo{font-weight:900;letter-spacing:2px;font-size:18px}
+.logo span{display:block;color:#c9a45b;font-size:10px;letter-spacing:3px;margin-top:5px}
+nav a{color:#ddd;text-decoration:none;margin-left:22px;font-size:13px}
+nav a:hover{color:#c9a45b}
+.hero{padding:92px 6% 84px;background:radial-gradient(circle at 80% 20%,#493b22 0,#1b1914 24%,#090b0d 62%)}
+.eyebrow{color:#c9a45b;letter-spacing:4px;font-size:11px;font-weight:800}
+.hero h1{font-size:clamp(42px,7vw,78px);line-height:.98;margin:15px 0;max-width:900px}
+.hero p{max-width:690px;color:#bfc1bf;font-size:17px;line-height:1.75}
+.owner{margin-top:28px;color:#ddd;font-size:14px}
+.owner strong{color:#c9a45b}
+.btn{display:inline-block;background:#c9a45b;color:#111;padding:14px 22px;border-radius:5px;text-decoration:none;font-weight:900;margin-top:18px}
+.btn.alt{background:transparent;color:#f5f5f2;border:1px solid #555;margin-left:8px}
+section{padding:68px 6%}
+.section-title{font-size:35px;margin:0 0 9px}
+.muted{color:#969b99;line-height:1.6}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}
+input{width:min(420px,100%);padding:14px 16px;background:#121518;border:1px solid #34383b;border-radius:6px;color:#fff;outline:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:18px;margin-top:28px}
+.card{background:linear-gradient(145deg,#15181a,#101214);border:1px solid #2b2f32;border-radius:14px;padding:18px;min-height:330px;transition:.2s}
+.card:hover{transform:translateY(-3px);border-color:#8e753f}
+.product-art{height:145px;border-radius:10px;background:radial-gradient(circle at 50% 20%,#3d3526,#16181a 65%);display:flex;justify-content:center;align-items:flex-end;position:relative;overflow:hidden}
+.bottle{width:76px;height:112px;border-radius:12px 12px 17px 17px;background:linear-gradient(90deg,#35383a,#111416,#3d4042);position:relative;box-shadow:0 12px 25px rgba(0,0,0,.45)}
+.bottle-cap{position:absolute;width:31px;height:13px;background:#b9954d;border-radius:4px 4px 1px 1px;top:19px;z-index:2}
+.label{position:absolute;left:8px;right:8px;top:40px;background:#c9a45b;color:#111;border-radius:4px;padding:8px 3px;text-align:center;font-size:7px}
+.label span{display:block;font-size:6px;letter-spacing:1px;font-weight:900}
+.label strong{display:block;margin-top:4px;font-size:8px;line-height:1.1}
+.num{margin-top:16px;color:#c9a45b;font-size:9px;letter-spacing:2px;font-weight:800}
+.card h3{margin:7px 0 3px;font-size:20px}
+.card p{color:#9da19f;line-height:1.45;font-size:13px;margin:5px 0}
+.card .pack{color:#e8e4d9;font-weight:700}
+.price{display:inline-block;margin-top:12px;border:1px solid #4a402b;color:#c9a45b;border-radius:20px;padding:6px 9px;font-size:9px;font-weight:800;letter-spacing:1px}
+.about{background:#111416}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:22px;margin-top:28px}
+.feature{border-left:2px solid #c9a45b;padding-left:15px}
+.feature b{display:block;margin-bottom:7px}
+.feature span{color:#999;font-size:13px;line-height:1.5}
+.contact{display:flex;justify-content:space-between;gap:30px;align-items:center;flex-wrap:wrap;background:linear-gradient(100deg,#17130b,#111416)}
+.info{color:#aaa;line-height:1.8;font-size:14px}
+.safety{margin-top:24px;padding:16px;border:1px solid #493e28;border-radius:8px;background:#15130e;color:#bdb6a7;font-size:12px;line-height:1.6}
+footer{padding:25px 6%;color:#777;border-top:1px solid #292d30;font-size:12px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:650px){nav{display:none}.hero{padding-top:65px}.btn.alt{margin-left:0}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">MUSLI HYGIENE CARE<span>PROFESSIONAL CLEANING SOLUTIONS</span></div>
+  <nav><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="eyebrow">HYGIENE • QUALITY • PROFESSIONAL RANGE</div>
+  <h1>Powerful Cleaning.<br>Trusted Hygiene.</h1>
+  <p>Explore the Musli Hygiene Care product catalogue — a professional presentation of cleaning and hygiene products for everyday needs.</p>
+  <div class="owner">Owner &amp; Proprietor: <strong>Shanavas Thazchayil</strong></div>
+  <a class="btn" href="tel:9961078684">CALL 9961078684</a>
+  <a class="btn alt" href="#products">VIEW PRODUCTS</a>
+</section>
+
+<section id="products">
+  <div class="eyebrow">FULL PRODUCT RANGE</div>
+  <h2 class="section-title">Our Products</h2>
+  <p class="muted">The complete product list from the supplied bill has been added. Product artwork below is conceptual and is not a representation of the actual packaging.</p>
+  <div class="toolbar">
+    <input id="search" type="search" placeholder="Search products..." aria-label="Search products">
+  </div>
+  <div class="grid" id="productGrid">
+
+      <article class="card">
+        <div class="product-art" aria-label="Conceptual product image">
+          <div class="bottle-cap"></div>
+          <div class="bottle">
+            <div class="label"><span>MHC</span><strong>Purewash</strong></div>
+          </div>
+        </div>
+        <div class="num">PRODUCT 01</div>
+        <h3>Purewash</h3>
+        <p class="pack">5 kg</p>
+        <p>Laundry / cleaning solution</p>
+        <div class="price">PRICE ON ENQUIRY</div>
+      </article>
+      <article class="card">
+        <div class="product-art" aria-label="Conceptual product image">
+          <div class="bottle-cap"></div>
+          <div class="bottle">
+            <div class="label"><span>MHC</span><strong>Starwash</strong></div>
+          </div>
+        </div>
+        <div class="num">PRODUCT 02</div>
+        <h3>Starwash</h3>
+        <p class="pack">5 kg</p>
+        <p>Cleaning solution</p>
+        <div class="price">PRICE ON ENQUIRY</div>
+      </article>
+      <article class="card">
+        <div class="product-art" aria-label="Conceptual product image">
+          <div class="bottle-cap"></div>
+          <div class="bottle">
+            <div class="label"><span>MHC</span><strong>Starwash</strong></div>
+          </div>
+        </div>
+        <div class="num">PRODUCT 03</div>
+        <h3>Starwash</h3>
+        <p class="pack">2 kg</p>
+        <p>Cleaning solution</p>
+        <div class="price">PRICE ON ENQUIRY</div>
+      </article>
+      <article class="card">
+        <div class="product-art" aria-label="Conceptual product image">
+          <div class="bottle-cap"></div>
+          <div class="bottle">
+            <div class="label"><span>MHC</span><strong>Stiff</strong></div>
+          </div>
+        </div>
+        <div class="num">PRODUCT 04</div>
+        <h3>Stiff</h3>
+        <p class="pack">1 Ltr</p>
+        <p>Cleaning solution</p>
+        <div class="price">PRICE ON ENQUIRY</div>
+      </article>
+      <article class="card">
+        <div class="product-art" aria-label="Conceptual product image">
+          <div class="bottle-cap"></div>
+          <div class="bottle">
+            <div class="label"><span>MHC</span><strong>Stif</strong></div>
+          </div>
+        </div>
+        <div class="num">PRODUCT 05</div>
+        <h3>Stif</h3>
+        <p class="pack">500 ml</p>
+        <p>Cleaning solution</p>
+        <div class="price">PRICE ON ENQUIRY</div>
+      </article>
+      <article class="card">
+        <div class="product-art" aria-label="Conceptual product image">
+          <div class="bottle-cap"></div>
+          <div class="bottle">
+            <div class="label"><span>MHC</span><strong>Comfort</strong></div>
+          </div>
+        </div>
+        <div class="num">PRODUCT 06</div>
+        <h3>Comfort</h3>
+        <p class="pack">500 ml</p>
+        <p>Cleaning solution</p>
+        <div class="price">PRICE ON ENQUIRY</div>
+      </article>
+      <article class="card">
+        <div class="product-art" aria-label="Conceptual product image">
+          <div class="bottle-cap"></div>
+          <div class="bottle">
+            <div class="label"><span>MHC</span><strong>Comfort</strong></div>
+          </div>
+        </div>
+        <div class="num">PRODUCT 07</div>
+        <h3>Comfort</h3>
+        <p class="pack">1 Ltr</p>
+        <p>Cleaning solution</p>
+        <div class="price">PRICE ON ENQUIRY</div>
+      </article>
+      <article class="card">
+        <div class="product-art" aria-label="Conceptual product image">
+          <div class="bottle-cap"></div>
+          <div class="bottle">
+            <div class="label"><span>MHC</span><strong>Floor Cleaner</strong></div>
+          </div>
+        </div>
+        <div class="num">PRODUCT 08</div>
+        <h3>Floor Cleaner</h3>
+        <p class="pack">1 Ltr</p>
+        <p>Floor-care solution</p>
+        <div class="price">PRICE ON ENQUIRY</div>
+      </article>
+      <article class="card">
+        <div class="product-art" aria-label="Conceptual product image">
+          <div class="bottle-cap"></div>
+          <div class="bottle">
+            <div class="label"><span>MHC</span><strong>Dishwash</strong></div>
+          </div>
+        </div>
+        <div class="num">PRODUCT 09</div>
+        <h3>Dishwash</h3>
+        <p class="pack">1 Ltr</p>
+        <p>Dish-cleaning solution</p>
+        <div class="price">PRICE ON ENQUIRY</div>
+      </article>
+      <article class="card">
+        <div class="product-art" aria-label="Conceptual product image">
+          <div class="bottle-cap"></div>
+          <div class="bottle">
+            <div class="label"><span>MHC</span><strong>Stain Remover</strong></div>
+          </div>
+        </div>
+        <div class="num">PRODUCT 10</div>
+        <h3>Stain Remover</h3>
+        <p class="pack">100 gm</p>
+        <p>Stain-care solution</p>
+        <div class="price">PRICE ON ENQUIRY</div>
+      </article>
+      <article class="card">
+        <div class="product-art" aria-label="Conceptual product image">
+          <div class="bottle-cap"></div>
+          <div class="bottle">
+            <div class="label"><span>MHC</span><strong>DP White</strong></div>
+          </div>
+        </div>
+        <div class="num">PRODUCT 11</div>
+        <h3>DP White</h3>
+        <p class="pack">60 kg</p>
+        <p>Cleaning chemical</p>
+        <div class="price">PRICE ON ENQUIRY</div>
+      </article>
+      <article class="card">
+        <div class="product-art" aria-label="Conceptual product image">
+          <div class="bottle-cap"></div>
+          <div class="bottle">
+            <div class="label"><span>MHC</span><strong>DP Blue</strong></div>
+          </div>
+        </div>
+        <div class="num">PRODUCT 12</div>
+        <h3>DP Blue</h3>
+        <p class="pack">30 kg</p>
+        <p>Cleaning chemical</p>
+        <div class="price">PRICE ON ENQUIRY</div>
+      </article>
+      <article class="card">
+        <div class="product-art" aria-label="Conceptual product image">
+          <div class="bottle-cap"></div>
+          <div class="bottle">
+            <div class="label"><span>MHC</span><strong>Hand Wash</strong></div>
+          </div>
+        </div>
+        <div class="num">PRODUCT 13</div>
+        <h3>Hand Wash</h3>
+        <p class="pack">1 Ltr</p>
+        <p>Hand hygiene</p>
+        <div class="price">PRICE ON ENQUIRY</div>
+      </article>
+      <article class="card">
+        <div class="product-art" aria-label="Conceptual product image">
+          <div class="bottle-cap"></div>
+          <div class="bottle">
+            <div class="label"><span>MHC</span><strong>Linia</strong></div>
+          </div>
+        </div>
+        <div class="num">PRODUCT 14</div>
+        <h3>Linia</h3>
+        <p class="pack">10 MRP</p>
+        <p>Cleaning / hygiene product</p>
+        <div class="price">PRICE ON ENQUIRY</div>
+      </article>
+      <article class="card">
+        <div class="product-art" aria-label="Conceptual product image">
+          <div class="bottle-cap"></div>
+          <div class="bottle">
+            <div class="label"><span>MHC</span><strong>Linia</strong></div>
+          </div>
+        </div>
+        <div class="num">PRODUCT 15</div>
+        <h3>Linia</h3>
+        <p class="pack">25 MRP</p>
+        <p>Cleaning / hygiene product</p>
+        <div class="price">PRICE ON ENQUIRY</div>
+      </article>
+      <article class="card">
+        <div class="product-art" aria-label="Conceptual product image">
+          <div class="bottle-cap"></div>
+          <div class="bottle">
+            <div class="label"><span>MHC</span><strong>Wml Consent</strong></div>
+          </div>
+        </div>
+        <div class="num">PRODUCT 16</div>
+        <h3>Wml Consent</h3>
+        <p class="pack">6 Btl</p>
+        <p>Cleaning product</p>
+        <div class="price">PRICE ON ENQUIRY</div>
+      </article>
+      <article class="card">
+        <div class="product-art" aria-label="Conceptual product image">
+          <div class="bottle-cap"></div>
+          <div class="bottle">
+            <div class="label"><span>MHC</span><strong>TC</strong></div>
+          </div>
+        </div>
+        <div class="num">PRODUCT 17</div>
+        <h3>TC</h3>
+        <p class="pack">500 ml</p>
+        <p>Cleaning product</p>
+        <div class="price">PRICE ON ENQUIRY</div>
+      </article>
+      <article class="card">
+        <div class="product-art" aria-label="Conceptual product image">
+          <div class="bottle-cap"></div>
+          <div class="bottle">
+            <div class="label"><span>MHC</span><strong>DP Rose</strong></div>
+          </div>
+        </div>
+        <div class="num">PRODUCT 18</div>
+        <h3>DP Rose</h3>
+        <p class="pack">30 kg</p>
+        <p>Cleaning chemical</p>
+        <div class="price">PRICE ON ENQUIRY</div>
+      </article>
+      <article class="card">
+        <div class="product-art" aria-label="Conceptual product image">
+          <div class="bottle-cap"></div>
+          <div class="bottle">
+            <div class="label"><span>MHC</span><strong>Sodium Hypo Cloride</strong></div>
+          </div>
+        </div>
+        <div class="num">PRODUCT 19</div>
+        <h3>Sodium Hypo Cloride</h3>
+        <p class="pack">100 kg</p>
+        <p>Disinfecting / cleaning chemical</p>
+        <div class="price">PRICE ON ENQUIRY</div>
+      </article>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="eyebrow">ABOUT MUSLI</div>
+  <h2 class="section-title">Professional. Clean. Reliable.</h2>
+  <p class="muted">Musli Hygiene Care brings multiple cleaning and hygiene products together in one convenient catalogue.</p>
+  <div class="features">
+    <div class="feature"><b>Wide Product Range</b><span>19 products and pack variants are listed in the current catalogue.</span></div>
+    <div class="feature"><b>Easy Enquiry</b><span>Contact the business directly for current product information and availability.</span></div>
+    <div class="feature"><b>Professional Presentation</b><span>A luxury black-and-gold identity designed for a modern business website.</span></div>
+    <div class="feature"><b>Owner</b><span>Shanavas Thazchayil — Owner &amp; Proprietor.</span></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div>
+    <div class="eyebrow">GET IN TOUCH</div>
+    <h2 class="section-title">Musli Hygiene Care</h2>
+    <div class="info">
+      <strong>Owner:</strong> Shanavas Thazchayil<br>
+      <strong>Phone:</strong> 9961078684<br>
+      <strong>Location:</strong> Near Kakkazhom Bridge, SNVTTI Kakkazhom Secondary School
+    </div>
+    <div class="safety">For chemical products, always follow the manufacturer's label, warnings and safety instructions. Product availability and pricing should be confirmed directly with the business.</div>
+  </div>
+  <a class="btn" href="tel:9961078684">CONTACT BUSINESS</a>
+</section>
+</main>
+
+<footer>
+  <span>© 2026 Musli Hygiene Care</span>
+  <span>Owner: Shanavas Thazchayil</span>
+</footer>
+
+<script>
+const search = document.getElementById('search');
+const cards = [...document.querySelectorAll('.card')];
+search.addEventListener('input', () => {
+  const q = search.value.toLowerCase().trim();
+  cards.forEach(card => {
+    card.style.display = card.innerText.toLowerCase().includes(q) ? '' : 'none';
+  });
+});
+</script>
+</body>
+</html>
